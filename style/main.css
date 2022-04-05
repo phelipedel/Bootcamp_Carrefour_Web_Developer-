@@ -1,0 +1,151 @@
+
+:root{
+   --red: #E50914;
+   --black: #141414;
+   --wihte: #AAA;
+   --white100: #FFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background: var(--black);
+    color: var(--white100);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+   
+}
+
+header .container i{
+    margin: 10px;
+}
+
+
+
+
+header .logo{
+    color: var(--red);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    
+    
+}
+
+header nav a{
+    
+    text-decoration: none;
+    color: var(--wihte);
+    margin-left: 10px;
+    justify-content: left;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+header nav a:hover{
+    color: var(--white100);
+    transition-duration: 1s;
+    
+}
+
+/*Filme pricipal*/
+
+main{
+    font-family: sans-serif;
+
+}
+.filme-principal{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 16px;
+    flex-direction: column;
+    background: linear-gradient(rgba(4, 4, 1, 0.445),rgba(4, 4, 1, 0.445)100%), url('https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABT_E-4bwsaROGn-nphSysfaXxvGnVI-W5fW0TpycZnLI7x3GnglAhexdIcSaYlJMe0juaLa7zRfioq-PLaW2St9xj4oq.jpg?r=436');
+    background-size: cover;
+    height: 400px;
+    color: var(--white100);
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-bottom: 40px;
+}
+.titulo{
+    margin-top: 15%;
+    font-size: 35px;
+    font-weight: bold;
+}
+.a{
+    margin-left: 30px;
+}
+
+.botao{
+    border: none;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao .b1{
+    background: var(--white100);
+    color: var(--black);
+}
+
+
+.botao:hover{
+    background-color: var(--red);
+    color: var(--white100);
+    transition-duration: 1s;
+    transition-duration: 1s;
+} 
+
+.botao i{
+    margin-right: 5px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+ @media screen and (max-width: 720px){
+     header .container{
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .botao{
+        margin-top: 5px;
+        width: 190px;
+     }
+ }
+
+ @media screen and (max-width: 1000px) {
+        .descricao{
+            width: 50%;
+        }
+ }
